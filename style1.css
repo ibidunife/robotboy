@@ -1,0 +1,144 @@
+h1 {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	color: #5f93e8;
+	margin-bottom: 50px;
+}
+
+.android {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.head, 
+.left_arm, 
+.torso, 
+.right_arm, 
+.left_leg, 
+.right_leg {
+	 background-color:plum;
+}
+
+.head { 
+	width: 200px; 
+	margin: 0 auto; 
+	height: 150px; 
+	border-radius: 200px 200px 100px 100px; 
+	margin-bottom: 10px;
+	transform-origin: bottom right;
+	transition: all 0.2s;
+} 
+
+.eyes:hover { transform: rotateY(20deg);
+	
+}
+
+.head_container:hover .head {
+	transform: rotate(40deg);
+}
+
+.upper_body { 
+	width: 300px; 
+	height: 150px;
+	display: flex; 
+} 
+
+.left_arm, .right_arm { 
+	width: 40px; 
+	height: 125px;
+	border-radius: 100px;
+	transform-origin: left;
+ 	transition: transform 0.5s; 
+} 
+
+.left_arm { 
+	margin-right: 10px; 
+	transition: all 0.8s;
+} 
+
+.left_arm_container:hover .left_arm {
+	transform: rotate(180deg);
+}
+
+.right_arm { 
+	margin-left: 10px; 
+	transition: all 0.8s;
+} 
+
+.right_arm_container:hover .right_arm {
+	transform: rotate(-180deg);
+}
+
+.torso { 
+	width: 200px; 
+	height: 200px;
+	border-radius: 5px 0 50px 50px;
+	transition: all 0.5s;
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	justify-content: center;
+	color: white;
+	align-items: center;
+} 
+
+.torso_container{
+	height: 500px;
+}
+
+.torso_container:hover .torso {
+    transform: scale(1.1, 1.1);
+    
+	border-radius: 120px 120px 50px 50px;
+}
+
+.lower_body { 
+	width: 200px; 
+	height: 200px;
+	margin: 0 auto;
+} 
+
+.left_leg, .right_leg { 
+	width: 40px; 
+	height: 120px;
+	border-radius: 0 0 100px 100px;
+	transition: all 0.3s;
+} 
+
+.left_leg_container { 
+	margin-left: 45px; 
+	display: inline-block; 
+} 
+
+.left_leg_container:hover .left_leg {
+	transform: rotateX(70deg);
+}
+
+.right_leg_container { 
+	margin-left: 30px; 
+	display: inline-block; 
+}
+
+.right_leg_container:hover .right_leg {
+	transform: rotateX(70deg);
+}
+
+.left_eye, .right_eye { 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 15px; 
+	background-color: white;  
+} 
+
+.left_eye { 
+	position: relative; 
+	top: 100px; 
+	left: 40px; 
+} 
+
+.right_eye { 
+	position: relative; 
+	top: 80px; 
+	left: 120px; 
+}
